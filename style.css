@@ -217,7 +217,7 @@ i {
     transform: rotateY(90deg);
 }
 
-.box1 .front:hover {
+.box1:hover .front {
     animation: flipY 0.2s forwards;
 }
 
@@ -250,7 +250,7 @@ i {
     color: var(--color3);
 }
 
-.box2 .front:hover {
+.box2:hover .front {
     animation: flipX 0.2s forwards;
 }
 
@@ -296,15 +296,15 @@ i {
     border-bottom: 10px solid var(--color2);
 }
 
-.box3 .front:hover {
+.box3:hover .front {
     animation: flipY 0.5s 6s forwards;
 }
 
-.box3 .front:hover .loader {
+.box3:hover .front .loader {
     animation: cyclingWheel 3s linear infinite, loading1 7s forwards;
 }
 
-.box3 .front:hover .loader::before {
+.box3:hover .front .loader::before {
     opacity: 0;
 }
 
@@ -356,19 +356,19 @@ i {
     width: 30px;
 }
 
-.box4 .front:hover {
+.box4:hover .front {
     animation: flipY 0.2s 9.1s forwards;
 }
 
-.box4 .front:hover .loading > div {
+.box4:hover .front .loading > div {
     animation: box4loader 3s linear 3 forwards;
 }
 
-.box4 .front:hover .nothovered {
+.box4:hover .front .nothovered {
     display: none;
 }
 
-.box4 .front:hover .hovered {
+.box4:hover .front .hovered {
     display: revert;
 }
 
@@ -377,7 +377,7 @@ i {
 }
 
 .box4:hover .back .duplicate {
-    animation: movingitem 8s 9.5s forwards;
+    animation: movingitem 8s linear 9.5s forwards;
 }
 
 @media screen and (min-width: 768px) {
